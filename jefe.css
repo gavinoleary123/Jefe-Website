@@ -35,9 +35,8 @@ header .container {
 }
 
 .logo img {
-  max-height: 120px;
+  height: 80px;
   width: auto;
-  display: block;
 }
 
 .nav-list {
@@ -69,9 +68,13 @@ header .container {
 
 /* Hero Section */
 .hero {
-  position: relative;
   height: 80vh;
-  /* Remove any previous background declarations here */
+  background: url('hero.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .hero::before {
@@ -79,21 +82,16 @@ header .container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('hero.jpg') no-repeat center center;
-  background-size: cover;
-  opacity: 0.7;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
   z-index: 1;
 }
-
-
-
-.hero .hero-content {
-  position: relative;
-  z-index: 2; /* Ensure content sits on top of the background */
-}
-
 
 .hero-content h1 {
   font-family: 'Raleway', sans-serif;
