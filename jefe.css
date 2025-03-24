@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700&display=swap');
+
+/* Reset and Box Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #111;
+  color: #eee;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+  background: #000;
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 120px;
+  width: auto;
+  display: block;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #f4a261;
+}
+
+.book-appointment a {
+  background: #f4a261;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('Photos/Jefe\'s Barber Shop-8.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f4a261;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #f4a261;
+  color: #111;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background: #e76f51;
+  color: #fff;
+}
+
+/* Section Styles */
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #f4a261;
+}
+
+/* About & Contact Sections */
+.about, .contact {
+  background: #1a1a1a;
+  padding: 60px 0;
+  margin-bottom: 40px;
+}
+
+.about p, .contact p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Services Section */
+.services {
+  background: #1a1a1a;
+  padding: 60px 0;
+  margin-bottom: 40px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  color: #fff;
+}
+
+.service-item h3 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Barbers Section */
+.barbers {
+  background: #1a1a1a;
+  padding: 60px 0;
+  margin-bottom: 40px;
+}
+
+.barber-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.barber-item {
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  color: #fff;
+}
+
+.barber-item h3 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.barber-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Gallery (if used) */
+.gallery {
+  background: #000;
+  padding: 60px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
