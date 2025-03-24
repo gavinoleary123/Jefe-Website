@@ -35,8 +35,9 @@ header .container {
 }
 
 .logo img {
-  height: 80px;
+  max-height: 120px;
   width: auto;
+  display: block;
 }
 
 .nav-list {
@@ -66,7 +67,6 @@ header .container {
   text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 80vh;
@@ -91,6 +91,7 @@ header .container {
   position: relative;
   z-index: 2;
 }
+
 
 
 .hero-content h1 {
