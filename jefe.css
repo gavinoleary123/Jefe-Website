@@ -81,11 +81,12 @@ header .container {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("Jefe's Barber Shop-14.png") no-repeat center center;
+  background: url("Jefe%27s%20Barber%20Shop-14.jpg") no-repeat center center;
   background-size: cover;
-  opacity: 0.7; /* 70% opacity */
+  opacity: 0.7;
   z-index: 1;
 }
+
 
 .hero .hero-content {
   position: relative;
