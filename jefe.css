@@ -9,9 +9,10 @@
 
 /* Body Styles */
 body {
+  /* Dark charcoal as primary background */
+  background-color: #1c1c1c;
+  color: #f5f5f5; /* Off-white for text on dark background */
   font-family: 'Open Sans', sans-serif;
-  background-color: #1c1c1c; /* Near-black charcoal */
-  color: #f5f5f5; /* Off-white text */
 }
 
 /* Container */
@@ -23,9 +24,10 @@ body {
 
 /* Header and Navigation */
 header {
+  /* Same dark charcoal as body */
   background: #1c1c1c;
   padding: 15px 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #333; /* Slightly lighter border */
 }
 
 header .container {
@@ -35,12 +37,12 @@ header .container {
 }
 
 .logo img {
-  /* Increase logo size on desktop */
   max-height: 80px;
   width: auto;
   display: block;
 }
 
+/* Navigation */
 .nav-list {
   list-style: none;
   display: flex;
@@ -48,7 +50,7 @@ header .container {
 }
 
 .nav-list li a {
-  color: #f5f5f5;
+  color: #f5f5f5; /* Off-white text */
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -56,12 +58,13 @@ header .container {
 }
 
 .nav-list li a:hover {
-  color: #b87333; /* Copper accent on hover */
+  color: #4b607f; /* Muted Indigo for hover */
 }
 
+/* Book Appointment Button */
 .book-appointment a {
-  background: #b87333;
-  color: #1c1c1c;
+  background: #f3701e; /* Deep orange accent */
+  color: #1c1c1c;       /* Contrast text on orange */
   padding: 10px 20px;
   border-radius: 3px;
   font-weight: bold;
@@ -98,21 +101,22 @@ header .container {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #f5f5f5;
+  color: #f5f5f5; /* Off-white text */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #f5f5f5;
 }
 
 /* Button */
 .btn {
   display: inline-block;
   padding: 15px 30px;
-  background: #b87333; /* Copper accent */
-  color: #1c1c1c;
+  background: #f3701e; /* Deep orange accent */
+  color: #1c1c1c;       /* Contrast text on orange */
   text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
@@ -120,7 +124,7 @@ header .container {
 }
 
 .btn:hover {
-  background: #e6a800; /* Brighter gold on hover */
+  background: #4b607f; /* Muted Indigo on hover */
   color: #f5f5f5;
 }
 
@@ -130,25 +134,26 @@ section {
   text-align: center;
 }
 
-/* Use a deep burgundy for content sections */
+/* Use a cream background (#e8d8c9) for content sections */
 .about, .contact, .services, .barbers {
-  background: #4a0d0d;
+  background: #e8d8c9;
   padding: 60px 0;
   margin-bottom: 40px;
 }
 
+/* Section Headings */
 section h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #b87333; /* Copper accent for headings */
+  color: #4b607f; /* Muted Indigo for headings */
 }
 
 /* About & Contact Text */
 .about p, .contact p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #f5f5f5;
+  color: #1c1c1c; /* Dark text on cream background */
 }
 
 /* Services Section */
@@ -160,20 +165,20 @@ section h2 {
 }
 
 .service-item {
-  background: #1c1c1c;
+  background: #1c1c1c; /* Dark card background */
   border: 1px solid #333;
   border-radius: 3px;
   padding: 20px;
   width: 300px;
   text-align: left;
-  color: #f5f5f5;
+  color: #f5f5f5; /* Light text on dark background */
 }
 
 .service-item h3 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #b87333;
+  color: #f3701e; /* Orange accent for service titles */
 }
 
 .service-item p {
@@ -203,7 +208,7 @@ section h2 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #b87333;
+  color: #f3701e;
 }
 
 .barber-item p {
@@ -276,20 +281,4 @@ footer {
 }
 
 /* Extra Small Devices */
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-  
-  .nav-list li a {
-    font-size: 0.9rem;
-  }
-  
-  .logo img {
-    max-height: 110px;
-  }
-}
+@media (max-width: 480
