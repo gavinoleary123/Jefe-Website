@@ -35,11 +35,13 @@ header .container {
 }
 
 .logo img {
+  /* Increase logo size on desktop */
   max-height: 80px;
   width: auto;
   display: block;
 }
 
+/* Navigation styles remain unchanged */
 .nav-list {
   list-style: none;
   display: flex;
@@ -71,7 +73,7 @@ header .container {
 .hero {
   position: relative;
   height: 80vh;
-  /* Background image is added via the pseudo-element below */
+  /* Use a pseudo-element for the background image */
 }
 
 .hero::before {
@@ -93,9 +95,8 @@ header .container {
   z-index: 2;
 }
 
-/* Updated Slogan Styling */
+/* Slogan and Hero Content */
 .hero-content h1 {
-  /* Using Playfair Display for a more distinctive look */
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
@@ -263,7 +264,12 @@ footer {
     font-size: 1rem;
   }
   
-  /* Adjust hero section */
+  /* Increase logo size on mobile */
+  .logo img {
+    max-height: 100px;
+  }
+  
+  /* Adjust hero section height and text */
   .hero {
     height: 60vh;
   }
@@ -295,5 +301,10 @@ footer {
   
   .nav-list li a {
     font-size: 0.9rem;
+  }
+  
+  /* Ensure logo is even larger on very small screens */
+  .logo img {
+    max-height: 110px;
   }
 }
