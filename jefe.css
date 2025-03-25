@@ -10,8 +10,8 @@
 /* Body Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #001f3f; /* Deep navy background */
-  color: #fefefe; /* Off-white text */
+  background-color: #000; /* Pure black background */
+  color: #fefefe;
 }
 
 /* Container */
@@ -23,9 +23,9 @@ body {
 
 /* Header and Navigation */
 header {
-  background: #001a33; /* slightly darker navy */
+  background: #000;
   padding: 15px 0;
-  border-bottom: 1px solid #004080;
+  border-bottom: 1px solid #333;
 }
 
 header .container {
@@ -61,7 +61,7 @@ header .container {
 
 .book-appointment a {
   background: #f4a261;
-  color: #001f3f;
+  color: #000;
   padding: 10px 20px;
   border-radius: 3px;
   font-weight: bold;
@@ -72,7 +72,6 @@ header .container {
 .hero {
   position: relative;
   height: 80vh;
-  /* Background image is applied via the pseudo-element below */
 }
 
 .hero::before {
@@ -98,8 +97,8 @@ header .container {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  color: #fefefe;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .hero-content p {
@@ -112,7 +111,7 @@ header .container {
   display: inline-block;
   padding: 15px 30px;
   background: #f4a261;
-  color: #001f3f;
+  color: #000;
   text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
@@ -120,8 +119,8 @@ header .container {
 }
 
 .btn:hover {
-  background: #e76f51;
-  color: #ffffff;
+  background: #e6a800; /* slightly darker gold */
+  color: #fff;
 }
 
 /* Section Styles */
@@ -139,7 +138,7 @@ section h2 {
 
 /* About & Contact Sections */
 .about, .contact {
-  background: #002b4d; /* Mid-tone navy */
+  background: #0d0d0d; /* a very dark grey/black */
   padding: 60px 0;
   margin-bottom: 40px;
 }
@@ -152,7 +151,7 @@ section h2 {
 
 /* Services Section */
 .services {
-  background: #002b4d;
+  background: #0d0d0d;
   padding: 60px 0;
   margin-bottom: 40px;
 }
@@ -165,8 +164,8 @@ section h2 {
 }
 
 .service-item {
-  background: #001f3f;
-  border: 1px solid #004080;
+  background: #000;
+  border: 1px solid #333;
   border-radius: 3px;
   padding: 20px;
   width: 300px;
@@ -178,6 +177,7 @@ section h2 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
+  color: #f4a261;
 }
 
 .service-item p {
@@ -187,7 +187,7 @@ section h2 {
 
 /* Barbers Section */
 .barbers {
-  background: #002b4d;
+  background: #0d0d0d;
   padding: 60px 0;
   margin-bottom: 40px;
 }
@@ -200,8 +200,8 @@ section h2 {
 }
 
 .barber-item {
-  background: #001f3f;
-  border: 1px solid #004080;
+  background: #000;
+  border: 1px solid #333;
   border-radius: 3px;
   padding: 20px;
   width: 300px;
@@ -213,6 +213,7 @@ section h2 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
+  color: #f4a261;
 }
 
 .barber-item p {
@@ -222,9 +223,9 @@ section h2 {
 
 /* Footer */
 footer {
-  background: #001a33;
+  background: #000;
   padding: 20px 0;
-  border-top: 1px solid #004080;
+  border-top: 1px solid #333;
   text-align: center;
   font-size: 0.9rem;
   color: #fefefe;
