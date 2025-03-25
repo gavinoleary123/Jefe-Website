@@ -71,18 +71,19 @@ header .container {
 
 /* Book Appointment Button */
 .book-appointment a {
-  background: #ECE3DF;  /* Light background */
-  color: #433F4E;       /* Dark text so it’s visible on light background */
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ECE3DF;
+  color: #5B5E73;
+  text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
-  text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
 
 .book-appointment a:hover {
-  background: #899ABE;  /* Light accent on hover */
-  color: #ECE3DF;       /* Light text on darker background */
+  background: #899ABE; /* Light accent on hover */
+  color: #ECE3DF;      /* Light text on darker background */
 }
 /* Hero Section */
 .hero {
