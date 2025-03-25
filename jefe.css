@@ -10,8 +10,8 @@
 /* Body Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #000; /* Pure black background */
-  color: #fefefe;
+  background-color: #1c1c1c; /* Near-black charcoal */
+  color: #f5f5f5; /* Off-white text */
 }
 
 /* Container */
@@ -23,7 +23,7 @@ body {
 
 /* Header and Navigation */
 header {
-  background: #000;
+  background: #1c1c1c;
   padding: 15px 0;
   border-bottom: 1px solid #333;
 }
@@ -48,7 +48,7 @@ header .container {
 }
 
 .nav-list li a {
-  color: #fefefe;
+  color: #f5f5f5;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -56,12 +56,12 @@ header .container {
 }
 
 .nav-list li a:hover {
-  color: #f4a261;
+  color: #b87333; /* Copper accent on hover */
 }
 
 .book-appointment a {
-  background: #f4a261;
-  color: #000;
+  background: #b87333;
+  color: #1c1c1c;
   padding: 10px 20px;
   border-radius: 3px;
   font-weight: bold;
@@ -93,11 +93,12 @@ header .container {
   z-index: 2;
 }
 
+/* Slogan and Hero Content */
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #fefefe;
+  color: #f5f5f5;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -110,8 +111,8 @@ header .container {
 .btn {
   display: inline-block;
   padding: 15px 30px;
-  background: #f4a261;
-  color: #000;
+  background: #b87333; /* Copper accent */
+  color: #1c1c1c;
   text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
@@ -119,8 +120,8 @@ header .container {
 }
 
 .btn:hover {
-  background: #e6a800; /* slightly darker gold */
-  color: #fff;
+  background: #e6a800; /* Brighter gold on hover */
+  color: #f5f5f5;
 }
 
 /* Section Styles */
@@ -129,33 +130,28 @@ section {
   text-align: center;
 }
 
+/* Use a deep burgundy for content sections */
+.about, .contact, .services, .barbers {
+  background: #4a0d0d;
+  padding: 60px 0;
+  margin-bottom: 40px;
+}
+
 section h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #f4a261;
+  color: #b87333; /* Copper accent for headings */
 }
 
-/* About & Contact Sections */
-.about, .contact {
-  background: #0d0d0d; /* a very dark grey/black */
-  padding: 60px 0;
-  margin-bottom: 40px;
-}
-
+/* About & Contact Text */
 .about p, .contact p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #fefefe;
+  color: #f5f5f5;
 }
 
 /* Services Section */
-.services {
-  background: #0d0d0d;
-  padding: 60px 0;
-  margin-bottom: 40px;
-}
-
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -164,20 +160,20 @@ section h2 {
 }
 
 .service-item {
-  background: #000;
+  background: #1c1c1c;
   border: 1px solid #333;
   border-radius: 3px;
   padding: 20px;
   width: 300px;
   text-align: left;
-  color: #fefefe;
+  color: #f5f5f5;
 }
 
 .service-item h3 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #f4a261;
+  color: #b87333;
 }
 
 .service-item p {
@@ -186,12 +182,6 @@ section h2 {
 }
 
 /* Barbers Section */
-.barbers {
-  background: #0d0d0d;
-  padding: 60px 0;
-  margin-bottom: 40px;
-}
-
 .barber-list {
   display: flex;
   flex-wrap: wrap;
@@ -200,20 +190,20 @@ section h2 {
 }
 
 .barber-item {
-  background: #000;
+  background: #1c1c1c;
   border: 1px solid #333;
   border-radius: 3px;
   padding: 20px;
   width: 300px;
   text-align: left;
-  color: #fefefe;
+  color: #f5f5f5;
 }
 
 .barber-item h3 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #f4a261;
+  color: #b87333;
 }
 
 .barber-item p {
@@ -223,12 +213,12 @@ section h2 {
 
 /* Footer */
 footer {
-  background: #000;
+  background: #1c1c1c;
   padding: 20px 0;
   border-top: 1px solid #333;
   text-align: center;
   font-size: 0.9rem;
-  color: #fefefe;
+  color: #f5f5f5;
 }
 
 /* Mobile Styles */
@@ -242,7 +232,7 @@ footer {
     align-items: center;
   }
   
-  /* Horizontal nav bar with scrolling */
+  /* Horizontal nav bar with scrolling if needed */
   .nav-list {
     display: flex;
     flex-direction: row;
