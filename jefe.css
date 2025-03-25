@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
 
+/* Enable Smooth Scrolling Globally */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset and Box Sizing */
 * {
   box-sizing: border-box;
@@ -9,10 +14,11 @@
 
 /* Body Styles */
 body {
-  /* Dark charcoal as primary background */
-  background-color: #1c1c1c;
-  color: #f5f5f5; /* Off-white for text on dark background */
   font-family: 'Open Sans', sans-serif;
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  /* Add top padding to account for fixed header (approx. header height) */
+  padding-top: 120px;
 }
 
 /* Container */
@@ -22,12 +28,16 @@ body {
   padding: 0 20px;
 }
 
-/* Header and Navigation */
+/* Header and Navigation - Fixed at Top */
 header {
-  /* Same dark charcoal as body */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: #1c1c1c;
   padding: 15px 0;
-  border-bottom: 1px solid #333; /* Slightly lighter border */
+  border-bottom: 1px solid #333;
+  z-index: 9999;
 }
 
 header .container {
@@ -42,7 +52,6 @@ header .container {
   display: block;
 }
 
-/* Navigation */
 .nav-list {
   list-style: none;
   display: flex;
@@ -50,7 +59,7 @@ header .container {
 }
 
 .nav-list li a {
-  color: #f5f5f5; /* Off-white text */
+  color: #f5f5f5;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -58,13 +67,12 @@ header .container {
 }
 
 .nav-list li a:hover {
-  color: #4b607f; /* Muted Indigo for hover */
+  color: #4b607f;
 }
 
-/* Book Appointment Button */
 .book-appointment a {
-  background: #f3701e; /* Deep orange accent */
-  color: #1c1c1c;       /* Contrast text on orange */
+  background: #f3701e;
+  color: #1c1c1c;
   padding: 10px 20px;
   border-radius: 3px;
   font-weight: bold;
@@ -96,12 +104,11 @@ header .container {
   z-index: 2;
 }
 
-/* Slogan and Hero Content */
 .hero-content h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #f5f5f5; /* Off-white text */
+  color: #f5f5f5;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -115,8 +122,8 @@ header .container {
 .btn {
   display: inline-block;
   padding: 15px 30px;
-  background: #f3701e; /* Deep orange accent */
-  color: #1c1c1c;       /* Contrast text on orange */
+  background: #f3701e;
+  color: #1c1c1c;
   text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
@@ -124,7 +131,7 @@ header .container {
 }
 
 .btn:hover {
-  background: #4b607f; /* Muted Indigo on hover */
+  background: #4b607f;
   color: #f5f5f5;
 }
 
@@ -134,7 +141,7 @@ section {
   text-align: center;
 }
 
-/* Use a cream background (#e8d8c9) for content sections */
+/* Content Sections with a Cream Background */
 .about, .contact, .services, .barbers {
   background: #e8d8c9;
   padding: 60px 0;
@@ -146,14 +153,14 @@ section h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #4b607f; /* Muted Indigo for headings */
+  color: #4b607f;
 }
 
 /* About & Contact Text */
 .about p, .contact p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #1c1c1c; /* Dark text on cream background */
+  color: #1c1c1c;
 }
 
 /* Services Section */
@@ -165,20 +172,20 @@ section h2 {
 }
 
 .service-item {
-  background: #1c1c1c; /* Dark card background */
+  background: #1c1c1c;
   border: 1px solid #333;
   border-radius: 3px;
   padding: 20px;
   width: 300px;
   text-align: left;
-  color: #f5f5f5; /* Light text on dark background */
+  color: #f5f5f5;
 }
 
 .service-item h3 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #f3701e; /* Orange accent for service titles */
+  color: #f3701e;
 }
 
 .service-item p {
@@ -237,7 +244,7 @@ footer {
     align-items: center;
   }
   
-  /* Horizontal nav bar with scrolling if needed */
+  /* Horizontal nav bar with scrolling */
   .nav-list {
     display: flex;
     flex-direction: row;
@@ -281,4 +288,20 @@ footer {
 }
 
 /* Extra Small Devices */
-@media (max-width: 480
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  
+  .nav-list li a {
+    font-size: 0.9rem;
+  }
+  
+  .logo img {
+    max-height: 110px;
+  }
+}
