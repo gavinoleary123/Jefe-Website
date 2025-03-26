@@ -82,7 +82,7 @@ header .container {
 }
 
 .book-appointment a:hover {
-  background: #899ABE;  /* Light accent on hover */
+  background: #ECE3DF;  /* Light accent on hover */
   color: #ECE3DF;       /* Light text on darker background */
 }
 /* Hero Section */
