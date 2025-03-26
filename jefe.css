@@ -15,9 +15,9 @@ html {
 /* Body Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #433F4E; /* Darkest shade for overall background */
-  color: #ECE3DF;            /* Lightest shade for text */
-  padding-top: 120px;        /* Account for fixed header height */
+  background-color: #433F4E;
+  color: #ECE3DF;
+  padding-top: 120px;
 }
 
 /* Container */
@@ -33,9 +33,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #5B5E73; /* Medium shade for header */
+  background: #5B5E73;
   padding: 15px 0;
-  border-bottom: 1px solid #BBBFCF; /* Subtle border using lighter shade */
+  border-bottom: 1px solid #BBBFCF;
   z-index: 9999;
 }
 
@@ -58,7 +58,7 @@ header .container {
 }
 
 .nav-list li a {
-  color: #ECE3DF; /* Lightest text color on medium background */
+  color: #ECE3DF;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -66,25 +66,28 @@ header .container {
 }
 
 .nav-list li a:hover {
-  color: #899ABE; /* Light accent shade on hover */
+  color: #899ABE;
 }
 
-/* Book Appointment Button */
-/* Book Appointment Button */
+/* Unified Button Style for .btn and .book-appointment a */
+.btn,
 .book-appointment a {
-  background: #ECE3DF;  /* Light background */
-  color: #433F4E;       /* Dark text so it’s visible on light background */
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ECE3DF;
+  color: #5B5E73;
+  text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
-  text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
 
+.btn:hover,
 .book-appointment a:hover {
-  background: #ECE3DF;  /* Light accent on hover */
-  color: #ECE3DF;       /* Light text on darker background */
+  background: #899ABE;
+  color: #ECE3DF;
 }
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -114,7 +117,7 @@ header .container {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: #ECE3DF; /* Light text */
+  color: #ECE3DF;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -124,45 +127,25 @@ header .container {
   color: #ECE3DF;
 }
 
-/* Generic Button */
-.btn {
-  display: inline-block;
-  padding: 15px 30px;
-  background: #ECE3DF;
-  color: #5B5E73;
-  text-decoration: none;
-  border-radius: 3px;
-  font-weight: bold;
-  transition: background 0.3s, color 0.3s;
-}
-
-.btn:hover {
-  background: #899ABE; /* Light accent on hover */
-  color: #ECE3DF;
-}
-
 /* Section Styles */
 section {
   padding: 80px 0;
   text-align: center;
 }
 
-/* Use medium shade (#5B5E73) for content sections */
 .about, .contact, .services, .barbers {
   background: #5B5E73;
   padding: 60px 0;
   margin-bottom: 40px;
 }
 
-/* Section Headings */
 section h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #ECE3DF; /* Light text for headings */
+  color: #ECE3DF;
 }
 
-/* About & Contact Text */
 .about p, .contact p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -178,7 +161,7 @@ section h2 {
 }
 
 .service-item {
-  background: #433F4E; /* Darkest shade for cards */
+  background: #433F4E;
   border: 1px solid #BBBFCF;
   border-radius: 3px;
   padding: 20px;
@@ -191,7 +174,7 @@ section h2 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #899ABE; /* Light accent for service titles */
+  color: #899ABE;
 }
 
 .service-item p {
@@ -244,13 +227,12 @@ footer {
   .container {
     padding: 0 10px;
   }
-  
+
   header .container {
     flex-direction: column;
     align-items: center;
   }
-  
-  /* Horizontal nav bar with scrolling */
+
   .nav-list {
     display: flex;
     flex-direction: row;
@@ -261,32 +243,31 @@ footer {
     padding: 0;
     list-style: none;
   }
-  
+
   .nav-list li {
     flex: 0 0 auto;
   }
-  
+
   .nav-list li a {
     font-size: 1rem;
   }
-  
-  /* Increase logo size on mobile */
+
   .logo img {
     max-height: 100px;
   }
-  
+
   .hero {
     height: 60vh;
   }
-  
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-content p {
     font-size: 1rem;
   }
-  
+
   .service-list, .barber-list {
     flex-direction: column;
     align-items: center;
@@ -298,15 +279,15 @@ footer {
   .hero-content h1 {
     font-size: 2rem;
   }
-  
+
   .hero-content p {
     font-size: 0.9rem;
   }
-  
+
   .nav-list li a {
     font-size: 0.9rem;
   }
-  
+
   .logo img {
     max-height: 110px;
   }
