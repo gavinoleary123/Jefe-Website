@@ -228,6 +228,7 @@ footer {
 
 /* Mobile */
 @media (max-width: 768px) {
+  @media (max-width: 768px) {
   .container {
     padding: 0 10px;
   }
@@ -245,14 +246,21 @@ footer {
     margin-top: 10px;
     width: 100%;
     overflow-x: auto;
+    padding: 0 10px; /* ✅ Prevents cutoff */
   }
 
   .nav-list {
     flex-wrap: nowrap;
     overflow-x: auto;
     white-space: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
+    padding-left: 10px;  /* ✅ Padding to ensure first item is visible */
+    padding-right: 10px; /* Optional */
+  }
+
+  .nav-list li {
+    flex: 0 0 auto;
   }
 
   .nav-list li a {
