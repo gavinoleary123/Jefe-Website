@@ -72,8 +72,16 @@ header .container {
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  overflow-x: auto;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.nav-list::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-list li a {
@@ -82,6 +90,7 @@ header .container {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .nav-list li a:hover {
@@ -106,7 +115,6 @@ header .container {
   color: var(--black);
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 80vh;
@@ -145,15 +153,13 @@ header .container {
   color: var(--white);
 }
 
-/* Global Section Padding + Scroll Fix */
 section {
   padding: 80px 0;
   text-align: center;
   background-color: var(--black);
-  scroll-margin-top: 120px; /* Fix scroll-to alignment under fixed header */
+  scroll-margin-top: 120px;
 }
 
-/* Specific Sections */
 .about,
 .contact,
 .services,
@@ -220,7 +226,7 @@ footer {
   color: var(--white);
 }
 
-/* Responsive Design */
+/* Mobile */
 @media (max-width: 768px) {
   .container {
     padding: 0 10px;
@@ -237,6 +243,8 @@ footer {
   .nav-wrapper {
     justify-content: center;
     margin-top: 10px;
+    width: 100%;
+    overflow-x: auto;
   }
 
   .nav-list {
@@ -244,6 +252,7 @@ footer {
     overflow-x: auto;
     white-space: nowrap;
     justify-content: center;
+    width: 100%;
   }
 
   .nav-list li a {
@@ -269,6 +278,7 @@ footer {
   }
 }
 
+/* Extra Small */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 2rem;
