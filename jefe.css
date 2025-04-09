@@ -72,16 +72,11 @@ header .container {
   list-style: none;
   display: flex;
   gap: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  overflow-x: auto;
   padding: 5px 10px;
   margin-left: auto;
   margin-right: 0;
-}
-
-.nav-list::-webkit-scrollbar {
-  display: none;
 }
 
 .nav-list li a {
@@ -227,9 +222,6 @@ footer {
 }
 
 /* Mobile */
-
-
-/* Scoped mobile styles */
 @media (max-width: 768px) {
   .container {
     padding: 0 16px;
@@ -251,34 +243,22 @@ footer {
 
   .nav-wrapper {
     width: 100%;
-    overflow-x: auto;
     padding: 0;
+    justify-content: center;
   }
 
   .nav-list {
-    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-padding-left: 12px;
-    padding: 8px 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 0;
     margin: 0;
-    gap: 16px;
-  }
-
-  .nav-list li {
-    flex: 0 0 auto;
   }
 
   .nav-list li a {
     font-size: 0.9375rem;
     padding: 8px 10px;
-  }
-
-  .nav-list::-webkit-scrollbar {
-    display: none;
   }
 
   .hero {
