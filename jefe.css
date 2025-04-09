@@ -242,6 +242,8 @@ footer {
 
   .nav-wrapper {
     justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 10px;
     width: 100%;
     overflow-x: auto;
@@ -249,6 +251,8 @@ footer {
 
   .nav-list {
     flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow-x: auto;
     white-space: nowrap;
     justify-content: center;
