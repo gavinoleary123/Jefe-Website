@@ -105,7 +105,7 @@ header .container {
   color: var(--black);
 }
 
-/* Hero Section - Add padding-top to prevent the navbar from covering the photo */
+/* Hero Section - Prevent Navbar Overlap */
 .hero {
   position: relative;
   height: 80vh;
@@ -145,12 +145,14 @@ header .container {
   color: var(--white);
 }
 
+/* Section Styling */
 section {
   padding: 80px 0;
   text-align: center;
   background-color: var(--black);
   scroll-margin-top: 120px; /* account for fixed header when scrolling to anchors */
 }
+
 .about,
 .contact,
 .services,
@@ -160,12 +162,14 @@ section {
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
 }
+
 section h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: var(--gold);
 }
+
 .about p,
 .contact p {
   font-size: 1.1rem;
@@ -181,6 +185,7 @@ section h2 {
   justify-content: center;
   gap: 20px;
 }
+
 .service-item,
 .barber-item {
   background: #111;
@@ -191,6 +196,7 @@ section h2 {
   text-align: left;
   color: var(--white);
 }
+
 .service-item h3,
 .barber-item h3 {
   font-family: 'Raleway', sans-serif;
@@ -198,6 +204,7 @@ section h2 {
   font-size: 1.2rem;
   color: var(--gold);
 }
+
 .service-item p,
 .barber-item p {
   font-size: 0.9rem;
@@ -219,19 +226,23 @@ footer {
   .container {
     padding: 0 10px; /* reduce side padding on smaller screens */
   }
+
   header .container {
     flex-direction: column;    /* stack logo and nav vertically */
     align-items: center;       /* center-align items horizontally */
   }
+
   .logo img {
     max-height: 80px;         /* slightly smaller logo on mobile */
   }
+
   .nav-wrapper {
     justify-content: center;   /* center the nav container */
     margin-top: 10px;          /* space between logo and nav links */
     width: 100%;
-    /* Removed overflow-x to prevent horizontal scrolling */
+    padding: 0 12px;           /* padding on sides */
   }
+
   .nav-list {
     flex-wrap: wrap;           /* allow nav links to wrap to new lines */
     overflow-x: visible;       /* no horizontal overflow; show all content */
@@ -239,20 +250,27 @@ footer {
     justify-content: center;   /* center links on each line */
     width: 100%;
     margin: 0;                 /* reset margins (was pushing nav to right) */
-    /* padding remains for some breathing room around links */
+    padding: 8px 12px;         /* padding for breathing room around links */
+    gap: 16px;
   }
+
   .nav-list li a {
     font-size: 1rem;          /* slightly smaller text for nav links on mobile */
   }
+
   .hero {
     height: 60vh;             /* reduce hero section height on mobile */
+    padding-top: 140px;       /* increased padding to ensure photo is fully visible */
   }
+
   .hero-content h1 {
     font-size: 2.5rem;        /* smaller heading text on mobile */
   }
+
   .hero-content p {
     font-size: 1rem;
   }
+
   .service-list,
   .barber-list {
     flex-direction: column;
@@ -265,12 +283,15 @@ footer {
   .hero-content h1 {
     font-size: 2rem;
   }
+
   .hero-content p {
     font-size: 0.9rem;
   }
+
   .nav-list li a {
     font-size: 0.9rem;        /* further reduce nav link text on very small screens */
   }
+
   .logo img {
     max-height: 90px;
   }
